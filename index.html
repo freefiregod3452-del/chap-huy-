@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="km"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ចាបហួយ • បំណុល Online</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div><h1>🏪 ចាបហួយ</h1><p>បញ្ជីអ្នកជំពាក់ Online</p></div><button id="logout" class="secondary">ចាកចេញ</button></header>
+<main>
+<section id="login" class="auth"><div class="box"><h2>ចូលប្រើប្រព័ន្ធ</h2><input id="email" type="email" placeholder="អ៊ីមែល"><input id="password" type="password" placeholder="ពាក្យសម្ងាត់"><button id="loginBtn">ចូល</button><p id="msg"></p></div></section>
+<section id="app" class="hidden">
+<div class="stats"><div class="card">អ្នកជំពាក់<strong id="count">0</strong></div><div class="card">សរុបជំពាក់<strong id="debt">0 ៛</strong></div><div class="card">បានសង<strong id="paid">0 ៛</strong></div><div class="card">នៅសល់<strong id="remain">0 ៛</strong></div></div>
+<div class="panel"><div class="toolbar"><input id="search" placeholder="🔎 ស្វែងរកឈ្មោះ ឬលេខទូរស័ព្ទ"><button id="add">＋ បន្ថែម</button></div>
+<div class="table"><table><thead><tr><th>ឈ្មោះ</th><th>ទូរស័ព្ទ</th><th>ទំនិញ</th><th>ជំពាក់</th><th>សង</th><th>នៅសល់</th><th></th></tr></thead><tbody id="rows"></tbody></table></div></div>
+</section></main>
+<div id="modal" class="modal hidden"><div class="box"><button id="close" class="x">×</button><h2 id="title">បន្ថែម</h2><input id="name" placeholder="ឈ្មោះ *"><input id="phone" placeholder="លេខទូរស័ព្ទ"><input id="item" placeholder="ទំនិញ / កំណត់ចំណាំ"><input id="amount" type="number" min="0" step="1" placeholder="ចំនួនជំពាក់ (៛)"><input id="payment" type="number" min="0" step="1" placeholder="បានសង (៛)"><input id="date" type="date"><button id="save">រក្សាទុក</button></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script>
+</body></html>
